@@ -1,7 +1,10 @@
 {
   "presets": [
     "@babel/react",
-    "@babel/env"
+    [
+      "@babel/env",
+      { "useBuiltIns": "usage", "corejs": { "version": 3, "proposals": true } }
+    ]
     /*
     Babel uses these "presets" to know how to transpile your Javascript code. Here's what we're saying with these:
       'react': teaches Babel to recognize JSX - a must have for React!
